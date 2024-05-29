@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<calc />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import calc from './components/calc.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    calc
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  background-color: black;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.center {
+  max-width: 1200px; /* Устанавливаем максимальную ширину контейнера */
+  width: 100%; /* Ширина контейнера занимает всю доступную ширину */
+  margin: 0 auto; /* Автоматически центрируем контейнер по горизонтали */
 }
 </style>
